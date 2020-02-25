@@ -1,21 +1,26 @@
+import { AuthService } from './services/Auth.service';
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import {HttpClientModule} from '@angular/common/http';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { ValueComponent } from './value/value.component';
+import { NavComponent } from './nav/nav.component';
+import {FormsModule} from '@angular/forms';
 
 @NgModule({
    declarations: [
       AppComponent,
-      ValueComponent
+      ValueComponent,
+      NavComponent
    ],
    imports: [
       BrowserModule,
       HttpClientModule,
-      AppRoutingModule
+      AppRoutingModule,
+      FormsModule
    ],
-   providers: [],
+   providers: [AuthService],
    bootstrap: [
       AppComponent
    ]
