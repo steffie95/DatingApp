@@ -3,7 +3,7 @@ import { HomeComponent } from './home/home.component';
 import { Routes } from '@angular/router';
 import { ListsComponent } from './lists/lists.component';
 import { MessagesComponent } from './messages/messages.component';
-import { MembersComponent } from './members/members.component';
+import { MembersListComponent } from './members-list/members-list.component';
 
 
 export const appRoutes: Routes = [
@@ -13,7 +13,7 @@ export const appRoutes: Routes = [
         runGuardsAndResolvers: 'always',
         canActivate: [AuthGuard],
         children: [
-            {path: 'members', component: MembersComponent},
+            {path: 'members', component: MembersListComponent},
             {path: 'messages', component: MessagesComponent},
             {path: 'lists', component: ListsComponent}
 
@@ -23,5 +23,5 @@ export const appRoutes: Routes = [
     {path: '**', redirectTo: '', pathMatch: 'full' }
 ];
 
-    
+
 
