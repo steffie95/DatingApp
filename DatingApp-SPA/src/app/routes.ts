@@ -1,3 +1,4 @@
+import { MemberDetailComponent } from './members/member-detail/member-detail.component';
 import { AuthGuard } from './_guards/auth.guard';
 import { HomeComponent } from './home/home.component';
 import { Routes } from '@angular/router';
@@ -14,6 +15,7 @@ export const appRoutes: Routes = [
         canActivate: [AuthGuard],
         children: [
             {path: 'members', component: MembersListComponent},
+            {path: 'members/:id', component: MemberDetailComponent},
             {path: 'messages', component: MessagesComponent},
             {path: 'lists', component: ListsComponent}
 
