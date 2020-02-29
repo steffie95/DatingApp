@@ -1,8 +1,11 @@
-[
+
+DECLARE @json NVARCHAR(MAX)
+SET @json =   [
     {
-      "Username": "Meghan",
-      "Gender": "female",
-      "DateOfBirth": "1987-07-16",
+
+      'Username': 'Meghan',
+      'Gender': 'female',
+      'DateOfBirth': '1987-07-16',
       "Password": "password",
       "KnownAs": "Meghan",
       "Created": "2017-01-29",
@@ -16,77 +19,77 @@
         {
           "url": "https://randomuser.me/api/portraits/women/49.jpg",
           "isMain": true,
-          "description": "Officia aute magna non in nulla."
+          "description": "Officia aute magna non in nulla.",
+		  "PhotosID" : 1
         }
       ]
     },
-
-  {
-    "Username": "Kristy",
-    "Gender": "female",
-    "DateOfBirth": "1992-02-07",
-    "Password": "password",
-    "KnownAs": "Kristy",
-    "Created": "2017-01-03",
-    "LastActive": "2017-01-03",
-    "Introduction": "Deserunt non culpa est proident do aliqua sunt deserunt et ad minim. Ea aute veniam ad deserunt laborum aliqua qui. Magna ad fugiat elit commodo fugiat cupidatat culpa ad esse. Id voluptate irure ut cillum. Officia eiusmod reprehenderit commodo consectetur quis.\r\n",
-    "LookingFor": "Incididunt ex fugiat qui sunt sit amet minim minim enim. Ea ad labore occaecat Lorem nisi eu nisi anim aliqua nisi pariatur eiusmod. Ullamco duis sint anim amet esse enim duis reprehenderit. Mollit et Lorem et non officia do. Qui sint est proident aliqua occaecat.\r\n",
-    "Interests": "Irure veniam labore sunt duis reprehenderit ut.",
-    "City": "Jackpot",
-    "Country": "Iraq",
-    "Photos": [
-      {
-        "url": "https://randomuser.me/api/portraits/women/99.jpg",
-        "isMain": true,
-        "description": "Ex deserunt ex excepteur eiusmod in duis ullamco."
-      }
-    ]
-  },
-
-  {
-    "Username": "Eve",
-    "Gender": "female",
-    "DateOfBirth": "1970-10-25",
-    "Password": "password",
-    "KnownAs": "Eve",
-    "Created": "2017-05-17",
-    "LastActive": "2017-05-17",
-    "Introduction": "Voluptate reprehenderit ullamco tempor officia et mollit tempor tempor excepteur velit velit eiusmod. Non laboris laboris veniam Lorem aliquip commodo nostrud anim aliquip pariatur deserunt. Excepteur incididunt officia exercitation consectetur laborum. Elit qui nostrud consectetur anim aliqua est.\r\n",
-    "LookingFor": "Do enim exercitation ipsum Lorem eiusmod ut id mollit quis ad. Aliquip in pariatur commodo anim adipisicing est tempor ullamco aute elit irure ipsum sit. Ipsum esse magna consequat dolore adipisicing elit est eu. Qui adipisicing ut sit velit nisi ex cillum minim. Aute cillum quis laborum ad do proident fugiat do proident excepteur sit id in ad. Amet in laborum voluptate laborum dolore voluptate quis cupidatat nulla cupidatat exercitation nisi.\r\n",
-    "Interests": "Ex esse sit officia id occaecat officia nulla cillum laboris.",
-    "City": "Sardis",
-    "Country": "Bosnia and Herzegovina",
-    "Photos": [
-      {
-        "url": "https://randomuser.me/api/portraits/women/44.jpg",
-        "isMain": true,
-        "description": "Excepteur incididunt labore anim tempor irure consectetur nulla qui elit non veniam deserunt deserunt."
-      }
-    ]
-  },
-
-  {
-    "Username": "Denise",
-    "Gender": "female",
-    "DateOfBirth": "1997-08-13",
-    "Password": "password",
-    "KnownAs": "Denise",
-    "Created": "2017-07-09",
-    "LastActive": "2017-07-09",
-    "Introduction": "In do officia aliquip enim Lorem minim nulla id est. Velit cillum mollit elit fugiat elit labore anim amet laboris ea cupidatat nisi sint. Officia ullamco ipsum dolor enim cupidatat aute magna laborum culpa ipsum sunt id eu non. Adipisicing id eu pariatur quis ullamco ea. Est mollit occaecat minim magna velit sint et reprehenderit anim eu eiusmod aliquip fugiat. Anim in irure aliquip incididunt tempor veniam eu dolor quis culpa Lorem pariatur.\r\n",
-    "LookingFor": "Consequat commodo voluptate est esse. Culpa deserunt Lorem incididunt culpa in adipisicing enim consequat aute aliqua pariatur. Enim pariatur occaecat velit irure tempor reprehenderit velit tempor cillum occaecat. Occaecat exercitation tempor irure nisi dolore non ut nulla non reprehenderit cupidatat eu consectetur ad.\r\n",
-    "Interests": "Deserunt ipsum minim deserunt irure laboris adipisicing minim ullamco.",
-    "City": "Fredericktown",
-    "Country": "Canada",
-    "Photos": [
-      {
-        "url": "https://randomuser.me/api/portraits/women/97.jpg",
-        "isMain": true,
-        "description": "Id in consectetur minim nostrud nostrud quis."
-      }
-    ]
-  },
-
+    {
+      "Username": "Kristy",
+      "Gender": "female",
+      "DateOfBirth": "1992-02-07",
+      "Password": "password",
+      "KnownAs": "Kristy",
+      "Created": "2017-01-03",
+      "LastActive": "2017-01-03",
+      "Introduction": "Deserunt non culpa est proident do aliqua sunt deserunt et ad minim. Ea aute veniam ad deserunt laborum aliqua qui. Magna ad fugiat elit commodo fugiat cupidatat culpa ad esse. Id voluptate irure ut cillum. Officia eiusmod reprehenderit commodo consectetur quis.\r\n",
+      "LookingFor": "Incididunt ex fugiat qui sunt sit amet minim minim enim. Ea ad labore occaecat Lorem nisi eu nisi anim aliqua nisi pariatur eiusmod. Ullamco duis sint anim amet esse enim duis reprehenderit. Mollit et Lorem et non officia do. Qui sint est proident aliqua occaecat.\r\n",
+      "Interests": "Irure veniam labore sunt duis reprehenderit ut.",
+      "City": "Jackpot",
+      "Country": "Iraq",
+      "Photos": [
+        {
+          "url": "https://randomuser.me/api/portraits/women/99.jpg",
+          "isMain": true,
+          "description": "Ex deserunt ex excepteur eiusmod in duis ullamco.",
+		  "PhotosID": 2	
+		}
+      ]
+    },
+    {
+      "Username": "Eve",
+      "Gender": "female",
+      "DateOfBirth": "1970-10-25",
+      "Password": "password",
+      "KnownAs": "Eve",
+      "Created": "2017-05-17",
+      "LastActive": "2017-05-17",
+      "Introduction": "Voluptate reprehenderit ullamco tempor officia et mollit tempor tempor excepteur velit velit eiusmod. Non laboris laboris veniam Lorem aliquip commodo nostrud anim aliquip pariatur deserunt. Excepteur incididunt officia exercitation consectetur laborum. Elit qui nostrud consectetur anim aliqua est.\r\n",
+      "LookingFor": "Do enim exercitation ipsum Lorem eiusmod ut id mollit quis ad. Aliquip in pariatur commodo anim adipisicing est tempor ullamco aute elit irure ipsum sit. Ipsum esse magna consequat dolore adipisicing elit est eu. Qui adipisicing ut sit velit nisi ex cillum minim. Aute cillum quis laborum ad do proident fugiat do proident excepteur sit id in ad. Amet in laborum voluptate laborum dolore voluptate quis cupidatat nulla cupidatat exercitation nisi.\r\n",
+      "Interests": "Ex esse sit officia id occaecat officia nulla cillum laboris.",
+      "City": "Sardis",
+      "Country": "Bosnia and Herzegovina",
+      "Photos": [
+        {
+          "url": "https://randomuser.me/api/portraits/women/44.jpg",
+          "isMain": true,
+          "description": "Excepteur incididunt labore anim tempor irure consectetur nulla qui elit non veniam deserunt deserunt.",
+			"PhotosID": 3
+		}
+      ]
+    },
+    {
+      "Username": "Denise",
+      "Gender": "female",
+      "DateOfBirth": "1997-08-13",
+      "Password": "password",
+      "KnownAs": "Denise",
+      "Created": "2017-07-09",
+      "LastActive": "2017-07-09",
+      "Introduction": "In do officia aliquip enim Lorem minim nulla id est. Velit cillum mollit elit fugiat elit labore anim amet laboris ea cupidatat nisi sint. Officia ullamco ipsum dolor enim cupidatat aute magna laborum culpa ipsum sunt id eu non. Adipisicing id eu pariatur quis ullamco ea. Est mollit occaecat minim magna velit sint et reprehenderit anim eu eiusmod aliquip fugiat. Anim in irure aliquip incididunt tempor veniam eu dolor quis culpa Lorem pariatur.\r\n",
+      "LookingFor": "Consequat commodo voluptate est esse. Culpa deserunt Lorem incididunt culpa in adipisicing enim consequat aute aliqua pariatur. Enim pariatur occaecat velit irure tempor reprehenderit velit tempor cillum occaecat. Occaecat exercitation tempor irure nisi dolore non ut nulla non reprehenderit cupidatat eu consectetur ad.\r\n",
+      "Interests": "Deserunt ipsum minim deserunt irure laboris adipisicing minim ullamco.",
+      "City": "Fredericktown",
+      "Country": "Canada",
+      "Photos": [
+        {
+          "url": "https://randomuser.me/api/portraits/women/97.jpg",
+          "isMain": true,
+          "description": "Id in consectetur minim nostrud nostrud quis.",
+		  "PhotosID": 4
+        }
+      ]
+    },
     {
       "Username": "Inez",
       "Gender": "female",
@@ -104,12 +107,13 @@
         {
           "url": "https://randomuser.me/api/portraits/women/24.jpg",
           "isMain": true,
-          "description": "Velit esse amet sunt ullamco exercitation qui."
+          "description": "Velit esse amet sunt ullamco exercitation qui.",
+		  "PhotosID": 5
         }
       ]
     },
 
-    
+    [
         {
           "Username": "Carter",
           "Gender": "male",
@@ -127,11 +131,11 @@
             {
               "url": "https://randomuser.me/api/portraits/men/21.jpg",
               "isMain": true,
-              "description": "Anim labore et Lorem irure elit culpa est nisi nulla non velit occaecat et ea."
+              "description": "Anim labore et Lorem irure elit culpa est nisi nulla non velit occaecat et ea.",
+			  "PhotosID": 6
             }
           ]
         },
-   
         {
           "Username": "Price",
           "Gender": "male",
@@ -149,11 +153,11 @@
             {
               "url": "https://randomuser.me/api/portraits/men/60.jpg",
               "isMain": true,
-              "description": "Adipisicing proident consequat mollit ipsum sunt."
+              "description": "Adipisicing proident consequat mollit ipsum sunt.",
+			  "PhotosID": 7
             }
           ]
         },
- 
         {
           "Username": "Spence",
           "Gender": "male",
@@ -171,11 +175,11 @@
             {
               "url": "https://randomuser.me/api/portraits/men/40.jpg",
               "isMain": true,
-              "description": "Ad quis id officia ex anim adipisicing ex do et quis mollit."
+              "description": "Ad quis id officia ex anim adipisicing ex do et quis mollit.",
+			  "PhotosID": 8
             }
           ]
         },
- 
         {
           "Username": "Nash",
           "Gender": "male",
@@ -193,12 +197,11 @@
             {
               "url": "https://randomuser.me/api/portraits/men/49.jpg",
               "isMain": true,
-              "description": "Incididunt fugiat qui amet sunt ad cillum ex ea ad commodo et irure qui dolore."
+              "description": "Incididunt fugiat qui amet sunt ad cillum ex ea ad commodo et irure qui dolore.",
+			  "PhotosID": 9
             }
           ]
         },
- 
-        
         {
           "Username": "Griffin",
           "Gender": "male",
@@ -216,13 +219,92 @@
             {
               "url": "https://randomuser.me/api/portraits/men/38.jpg",
               "isMain": true,
-              "description": "Ipsum dolore sint do nostrud."
+              "description": "Ipsum dolore sint do nostrud.",
+			  "PhotosID": 10
             }
           ]
         }
-      
-  ]
+      ]
+  
   
   
 
-  
+  SELECT * FROM  
+ OPENJSON ( @json )  
+WITH (   
+              Username   varchar(50) '$.Username' ,  
+              Gender     nvarchar(25)     '$.Gender',  
+              DateOfBirth datetime '$.DateOfBirth',  
+              Password nvarchar(128) '$.password',
+			  KnownAs nvarchar(50) '$.KnownAs',
+			  Created datetime '$.Created',
+			  LastActive datetime '$.LastActive',
+			  Introduction nvarchar(MAX) '$.Introduction',
+			  LookingFor nvarchar(MAX) '$.LookingFor',
+			  Interests nvarchar(MAX) '$.Interests',
+			  City nvarchar(50) '$.City',
+			  Country nvarchar(50) '$.Country',
+			  PhotosID int  '$.Photos.PhotosID'
+
+ ) 
+ 
+
+Declare @JSON varchar(max)
+ SELECT * 
+FROM OPENROWSET (BULK 'B:\Users\stefa\Source\Repos\DatingApp\DatingApp.API\Data\UserSeedData.JSON', SINGLE_CLOB) as import
+If (ISJSON(@JSON)=1)
+Print 'It is a valid JSON'
+ELSE
+Print 'Error in JSON format'
+
+Declare @JSON varchar(max)
+SELECT @JSON=BulkColumn
+FROM OPENROWSET (BULK 'B:\Users\stefa\Source\Repos\DatingApp\DatingApp.API\Data\UserSeedData.JSON', SINGLE_CLOB) import
+If (ISJSON(@JSON)=1)
+Print 'It is a valid JSON'
+ELSE
+Print 'Error in JSON format'
+
+Declare @JSON varchar(max)
+SELECT @JSON=BulkColumn
+FROM OPENROWSET (BULK 'B:\Users\stefa\Source\Repos\DatingApp\DatingApp.API\Data\UserSeedData.JSON', SINGLE_CLOB) import
+SELECT *
+FROM OPENJSON (@JSON)
+WITH (   
+              [Username] varchar(50),  
+              [Gender] nvarchar(25),  
+              [DateOfBirth] datetime,  
+              Password nvarchar(MAX),
+			  KnownAs nvarchar(50) ,
+			  Created datetime ,
+			  LastActive datetime ,
+			  Introduction nvarchar(MAX) ,
+			  LookingFor nvarchar(MAX),
+			  Interests nvarchar(MAX) ,
+			  City nvarchar(50) ,
+			  Country nvarchar(50)
+ ) 
+ 
+ Declare @JSON varchar(max)
+SELECT @JSON=BulkColumn
+FROM OPENROWSET (BULK 'B:\Users\stefa\Source\Repos\DatingApp\DatingApp.API\Data\UserSeedData.JSON', SINGLE_CLOB) import
+SElect * INTO  JSONTable2
+ FROM OPENJSON (@JSON)
+WITH 
+(
+              [Username] nvarchar(MAX),
+			  City nvarchar(50),
+			  Country nvarchar(50),
+			  Created datetime,
+			  [DateOfBirth] datetime,  
+              [Gender] nvarchar(25),  
+			  Interests nvarchar(MAX),
+			  Introduction nvarchar(MAX),
+			  KnownAs nvarchar(50),
+			  LastActive datetime,
+			  LookingFor nvarchar(MAX),
+			  Password nvarchar(MAX),
+)
+
+INSERT INTO Users
+SELECT * FROM JSONTable2
