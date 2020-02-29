@@ -1,3 +1,4 @@
+import { MemberCardComponent } from './members/members-list/member-card/member-card.component';
 import { UserService } from './services/user.service';
 import { appRoutes } from './routes';
 import { AlertifyService } from './services/alertify.service';
@@ -17,7 +18,7 @@ import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import { RouterModule } from '@angular/router';
 import { ListsComponent } from './lists/lists.component';
 import { MessagesComponent } from './messages/messages.component';
-import { MembersListComponent } from './members-list/members-list.component';
+import { MembersListComponent } from './members/members-list/members-list.component';
 
 
 @NgModule({
@@ -28,7 +29,8 @@ import { MembersListComponent } from './members-list/members-list.component';
       RegisterComponent,
       ListsComponent,
       MessagesComponent,
-      MembersListComponent
+      MembersListComponent,
+      MemberCardComponent
    ],
    imports: [
       BrowserModule,
