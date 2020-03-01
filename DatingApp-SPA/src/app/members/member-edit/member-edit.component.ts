@@ -2,6 +2,7 @@ import { User } from './../../_models/user';
 import { ActivatedRoute } from '@angular/router';
 import { Component, OnInit } from '@angular/core';
 
+
 @Component({
   selector: 'app-member-edit',
   templateUrl: './member-edit.component.html',
