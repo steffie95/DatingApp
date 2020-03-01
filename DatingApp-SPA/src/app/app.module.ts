@@ -23,7 +23,7 @@ import { ListsComponent } from './lists/lists.component';
 import { MessagesComponent } from './messages/messages.component';
 import { MembersListComponent } from './members/members-list/members-list.component';
 import { JwtModule } from '@auth0/angular-jwt';
-import { NgxGalleryModule } from 'ngx-gallery';
+import { NgxGalleryModule } from '@kolkov/ngx-gallery';
 
 export function tokenGetter() {
    return localStorage.getItem('token');

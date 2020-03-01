@@ -1,7 +1,7 @@
 import { JwtHelperService } from '@auth0/angular-jwt';
 import { AuthService } from './services/Auth.service';
 import { Component, OnInit } from '@angular/core';
-import { NgxGalleryOptions, NgxGalleryImage, NgxGalleryAnimation } from 'ngx-gallery';
+import { NgxGalleryOptions, NgxGalleryImage, NgxGalleryAnimation } from '@kolkov/ngx-gallery';
 
 @Component({
   selector: 'app-root',
