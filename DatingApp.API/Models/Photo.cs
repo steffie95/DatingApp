@@ -1,5 +1,5 @@
 using System;
-
+using DatingApp.API.Models;
 
 namespace DatingApp.API.Models 
 {
@@ -15,6 +15,7 @@ namespace DatingApp.API.Models
 
         public bool IsMain {get; set;}
 
+        public string PublicId {get; set;}
         public User User {get; set;}
 
         public int UserId {get; set;}
