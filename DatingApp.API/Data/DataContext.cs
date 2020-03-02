@@ -13,7 +13,7 @@ namespace DatingApp.API.Data
 
         public DbSet<Photo> Photos {get; set;}
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder){
-            optionsBuilder.UseSqlServer(@"Server=DESKTOP-HM255OB\SQLEXPRESS;Database=ValuesDB;Trusted_Connection=True;");
+            optionsBuilder.UseSqlServer(@"Server=DESKTOP-6EV5SNM\LOCALHOST;Database=ValuesDB;Trusted_Connection=True;");
         }
     }
 }
