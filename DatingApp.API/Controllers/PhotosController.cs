@@ -17,6 +17,7 @@ namespace DatingApp.API.Controllers
     [Authorize]
     [Route("api/users/{userId}/photos")]
     [ApiController]
+    
     public class PhotosController : ControllerBase
     {
         private readonly IDatingRepository _repo;
@@ -50,7 +51,8 @@ public async Task<IActionResult> GetPhoto(int id)
 
 
 [HttpPost]
-public async Task<IActionResult> AddPhotoForUser(int userId, PhotoForCreationDto photoForCreationDto)
+
+public async Task<IActionResult> AddPhotoForUser(int userId, [FromForm] PhotoForCreationDto photoForCreationDto)
 {
      if (userId != int.Parse(User.FindFirst(ClaimTypes.NameIdentifier).Value))
                 return Unauthorized();
@@ -70,7 +72,7 @@ public async Task<IActionResult> AddPhotoForUser(int userId, PhotoForCreationDto
                         File = new FileDescription(file.Name, stream),
                         Transformation = new Transformation().Width(500).Height(500).Crop("fill").Gravity("face")
                     };
-                    uploadResult = _cloudinary.Upload(uploadParams);
+               uploadResult = _cloudinary.Upload(uploadParams);
                 }
             }
         photoForCreationDto.Url = uploadResult.Uri.ToString();
