@@ -27,6 +27,7 @@ import { MessagesComponent } from './messages/messages.component';
 import { MembersListComponent } from './members/members-list/members-list.component';
 import { JwtModule } from '@auth0/angular-jwt';
 import { NgxGalleryModule } from '@kolkov/ngx-gallery';
+import { PhotoEditorComponent } from './members/photo-editor/photo-editor.component';
 
 export function tokenGetter() {
    return localStorage.getItem('token');
@@ -43,7 +44,8 @@ export function tokenGetter() {
       MembersListComponent,
       MemberEditComponent,
       MemberCardComponent,
-      MemberDetailComponent
+      MemberDetailComponent,
+      PhotoEditorComponent
    ],
    imports: [
       BrowserModule,
