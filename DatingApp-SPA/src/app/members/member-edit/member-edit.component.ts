@@ -24,14 +24,14 @@ export class MemberEditComponent implements OnInit {
   }
 
 
-  constructor(private route: ActivatedRoute, private alertify: AlertifyService, 
+  constructor(private route: ActivatedRoute, private alertify: AlertifyService,
               private userService: UserService, private authService: AuthService) { }
 
   ngOnInit() {
   this.route.data.subscribe( data => {
     this.user = data['user'];
   });
-    this.authService.currentPhotoUrl.subscribe(photoUrl => this.photoUrl = photoUrl);
+  this.authService.currentPhotoUrl.subscribe(photoUrl => this.photoUrl = photoUrl);
   }
 
   updateUser() {
@@ -40,7 +40,7 @@ export class MemberEditComponent implements OnInit {
       this.editForm.resetForm(this.user);
     }, error => {
       this.alertify.error(error);
-    })
+    });
   }
 
   updateMainPhoto(photoUrl) {
