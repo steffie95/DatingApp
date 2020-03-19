@@ -19,7 +19,7 @@ import {FormsModule, ReactiveFormsModule} from '@angular/forms';
 import { HomeComponent } from './home/home.component';
 import { RegisterComponent } from './register/register.component';
 import { ErrorInterceptorProvider} from './services/error.interceptor';
-import { BsDropdownModule, TabsModule } from 'ngx-bootstrap';
+import { BsDropdownModule, TabsModule, PaginationModule } from 'ngx-bootstrap';
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import { RouterModule } from '@angular/router';
 import { ListsComponent } from './lists/lists.component';
@@ -49,8 +49,7 @@ export function tokenGetter() {
       MemberEditComponent,
       MemberCardComponent,
       MemberDetailComponent,
-      PhotoEditorComponent,
-      
+      PhotoEditorComponent
    ],
    imports: [
       BrowserModule,
@@ -63,6 +62,7 @@ export function tokenGetter() {
       FileUploadModule,
       BrowserAnimationsModule,
       BsDatepickerModule.forRoot(),
+      PaginationModule.forRoot(),
       TabsModule.forRoot(),
       BsDropdownModule.forRoot(),
       TimeagoModule.forRoot(),
